@@ -1,0 +1,31 @@
+body {
+    background:url(telkom3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+font-size: x-large;
+font-family: arial;
+    color:red;
+}
+h3{
+    color:greenyellow;
+}
+table{
+    background-color: whitesmoke;
+    color: black;
+    font: size 12px;
+    text-align: center;
+}
+th{
+    font-size:16px;
+    background-color: red;
+    color:white;
+}
+.wrapper {
+    text-align: center;
+}
+.button {
+    position: left;
+    top: 50%;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--inline css-->
+<style>
+html {
+  box-sizing: border-box;
+
+}
+body {
+  float: center;
+  background-image: url('assets/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  float: LEFT;
+  width: 20%;
+  margin-left: 26%;
+  margin-bottom: 16px;
+  padding: 3px 10px 10px 15px;
+}
+.column2 {
+  float: LEFT;
+  width: 20%;
+  margin-left: 10%;
+  margin-bottom: 16px;
+  padding: 3px 10px 10px 15px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+<!--sampe sini-->
+</head>
+<body>
+  <a href="index.php"><button>BERANDA</button></a>
+<br>
+<div class="row">
+  <div class="column1">
+    <div class="card">
+      <img src="assets/fadhol.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Mohammad Fadhol</h2>
+        <p class="title">Web Developer
+          <br>
+          IT Infrastructure
+        </p>
+        <p>A full-time learner</p>
+        <p>@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="assets/alwi.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>M. Alwi Idris</h2>
+        <p class="title">Web Developer
+          <br>
+          Mobile Developer
+        </p>
+        <p>I'm done with semicolon</p>
+        <p>@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
